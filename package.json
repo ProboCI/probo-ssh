@@ -4,7 +4,8 @@
   "description": "An SSH endpoint for connecting to probo containers.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "./bin/probo-ssh"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,7 @@
+#! /usr/bin/env node
+
+var proboSSH = require('..');
+var Server = proboSSH.Server;
+
+var server = new Server();
+server.start();
