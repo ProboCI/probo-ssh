@@ -17,3 +17,15 @@ bash environment.
   - Add proper support for exec
   - Connect to a [container manager](https://github.com/ProboCI/probo/blob/master/lib/ContainerManager.js) service over
     TCP rather than invoking docker directly
+
+## Current POC functionality
+
+You can install and start the server wtih:
+
+```` bash
+npm install
+npm start
+````
+
+Then you can ssh to a container running in docker (it has to already be started)
+by sshing to `ssh [YOUR CONTAINER ID]@localhost -p 2222` on the same host.
