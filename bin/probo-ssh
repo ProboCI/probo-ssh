@@ -1,7 +1,10 @@
 #! /usr/bin/env node
+var fs = require('fs');
+var path = require('path');
 
 var proboSSH = require('..');
 var Server = proboSSH.Server;
 
-var server = new Server();
+var hostKey = fs.readFileSync(path.resolve(__dirname, '..', 'test', 'fixtures', 'host'))
+var server = new Server({hostKey: hostKey});
 server.start();
